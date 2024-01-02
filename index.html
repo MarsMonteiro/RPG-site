@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Character Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="style.css"></script>
+</head>
+<body>
+
+    <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+}
+</style>
+<!-- o site está projetado numa gralha de 3 colunas, no qual a terceira aparece em branco
+objetivo: colocar a imagem do personagem se possível -->
+
+
+<h1>RPG Character Sheet</h1>
+<h3>Base</h3>
+<form id="characterSheetForm">
+    <div class="grid-container">
+      <div class="grid-item">
+       
+              <label for="characterName">Character Name:</label>
+              <input type="text" id="characterName" name="characterName">
+      </div>
+
+      <div class="grid-item">
+               <label for="Nicknames">Nicknames:</label>
+               <input type="text" id="nicknames" name="nicknames">
+      </div>
+
+      <div class="grid-item">
+        <label for="blanc-space"></label>
+      </div>
+
+      <div class="grid-item">
+               <label for="Race">Race:</label>
+               <input type="text" id="race" name="race">
+      </div> 
+
+      <div class="grid-item">
+               <label for="age">Age:</label>
+               <input type="number" id="age" name="age">
+      </div>
+
+      <div class="grid-item">
+        <label for="blanc-space"></label>
+      </div>
+
+      <div class="grid-item">
+               <label for="blanc-space">Genre:</label>
+               <input type="text" id="genre" name="genre">
+      </div> 
+
+      <div class="grid-item">
+               <label for="class">Class:</label>
+               <input type="text" id="class" name="class">
+      </div>
+
+      <div class="grid-item">
+        <label for="blanc-space"></label>
+      </div>
+
+      <div class="grid-item">
+              <label for="blanc-space">Magic:</label>
+              <input type="text" id="magic" name="magic">
+      </div>
+
+      <div class="grid-item">
+             <label for="characterName">Titles:</label>
+             <input type="text" id="titles" name="titles">
+     </div>
+
+     <div class="grid-item">
+      <label for="blanc-space"></label>
+    </div>
+  </form>
+</div>
+
+<h3>Abilities</h3>
+<form id="characterSheetForm">
+    <div class="grid-container">
+
+      <div class="grid-item">
+            <label for="ab">Ability:</label>
+            <input type="text" id="ab" name="ab">
+      </div>
+
+      <div class="grid-item">
+        <label for="blanc-space"></label>
+      </div>
+
+      <div class="grid-item">
+        <label for="blanc-space"></label>
+      </div>
+
+      <div class="grid-item">
+              <label for="weapon">Weapon:</label>
+              <input type="text" id="wepon" name="weapon">
+      </div>
+
+      <div class="grid-item">
+               <label for="type">Type:</label>
+               <input type="text" id="type" name="type">
+      </div>
+
+      <div class="grid-item">
+        <label for="blanc-space"></label>
+      </div>
+
+      <div class="grid-item">
+               <label for="range">Range:</label>
+               <input type="text" id="range" name="range">
+      </div> 
+
+      <div class="grid-item">
+               <label for="damage">Damage:</label>
+               <input type="number" id="damage" name="damage">
+      </div>
+
+      <div class="grid-item">
+        <label for="blanc-space"></label>
+      </div>
+
+      <div class="grid-item">
+               <label for="crit">Critic Damage:</label>
+               <input type="number" id="crit" name="crit">
+      </div> 
+
+      <div class="grid-item">
+               <label for="descr">Description:</label>
+               <input type="text" id="descr" name="descr">
+      </div>
+
+      <div class="grid-item">
+        <label for="blanc-space"></label>
+      </div>
+
+     
+    </div>
+  </form>
+</div>
+
+<form id="characterSheetForm">
+  <div class="grid-container">
+
+    <div class="grid-item">
+      <label for="ab">Ability:</label>
+      <input type="text" id="ab" name="ab">
+</div>
+
+<div class="grid-item">
+  <label for="blanc-space"></label>
+</div>
+
+<div class="grid-item">
+  <label for="blanc-space"></label>
+</div>
+
+
+    <div class="grid-item">
+            <label for="weapon">Weapon:</label>
+            <input type="text" id="wepon" name="weapon">
+    </div>
+
+    <div class="grid-item">
+             <label for="type">Type:</label>
+             <input type="text" id="type" name="type">
+    </div>
+
+    <div class="grid-item">
+      <label for="blanc-space"></label>
+    </div>
+
+    <div class="grid-item">
+             <label for="range">Range:</label>
+             <input type="text" id="range" name="range">
+    </div> 
+
+    <div class="grid-item">
+             <label for="damage">Damage:</label>
+             <input type="number" id="damage" name="damage">
+    </div>
+
+    <div class="grid-item">
+      <label for="blanc-space"></label>
+    </div>
+
+    <div class="grid-item">
+             <label for="crit">Critic Damage:</label>
+             <input type="number" id="crit" name="crit">
+    </div> 
+
+    <div class="grid-item">
+             <label for="descr">Description:</label>
+             <input type="text" id="descr" name="descr">
+    </div>
+
+    <div class="grid-item">
+      <label for="blanc-space"></label>
+    </div>
+
+   
+  </div>
+</form>
+</div>
+
+<form id="characterSheetForm">
+  <div class="grid-container">
+
+    <div class="grid-item">
+      <label for="ab">Ability:</label>
+      <input type="text" id="ab" name="ab">
+</div>
+
+<div class="grid-item">
+  <label for="blanc-space"></label>
+</div>
+
+<div class="grid-item">
+  <label for="blanc-space"></label>
+</div>
+
+
+    <div class="grid-item">
+            <label for="weapon">Weapon:</label>
+            <input type="text" id="wepon" name="weapon">
+    </div>
+
+    <div class="grid-item">
+             <label for="type">Type:</label>
+             <input type="text" id="type" name="type">
+    </div>
+
+    <div class="grid-item">
+      <label for="blanc-space"></label>
+    </div>
+
+    <div class="grid-item">
+             <label for="range">Range:</label>
+             <input type="text" id="range" name="range">
+    </div> 
+
+    <div class="grid-item">
+             <label for="damage">Damage:</label>
+             <input type="number" id="damage" name="damage">
+    </div>
+
+    <div class="grid-item">
+      <label for="blanc-space"></label>
+    </div>
+
+    <div class="grid-item">
+             <label for="crit">Critic Damage:</label>
+             <input type="number" id="crit" name="crit">
+    </div> 
+
+    <div class="grid-item">
+             <label for="descr">Description:</label>
+             <input type="text" id="descr" name="descr">
+    </div>
+
+    <div class="grid-item">
+      <label for="blanc-space"></label>
+    </div>
+
+   
+  </div>
+</form>
+</div>
+
+<h3>Base Stats & Skills</h3>
+    <form id="characterSheetForm">
+     <div class="grid-item">
+      <label for="Stamina"></label>
+        <form action="/action_page.php">
+         <label for="Stamina">Stamina</label>
+          <input type="checkbox" id="skill-1" name="skill" checked>
+          <input type="checkbox" id="skill-2" name="skill"onclick="stamina(2)">
+         <input type="checkbox" id="skill-3" name="skill"onclick="stamina(3)">
+         <input type="checkbox" id="skill-4" name="skill"onclick="stamina(4)">
+          <input type="checkbox" id="skill-5" name="skill"onclick="stamina(5)">
+         <input type="checkbox" id="skill-6" name="skill"onclick="stamina(6)">
+         <input type="checkbox" id="skill-7" name="skill"onclick="stamina(7)">
+         <input type="checkbox" id="skill-8" name="skill"onclick="stamina(8)">
+          <input type="checkbox" id="skill-9" name="skill"onclick="stamina(9)">
+         <input type="checkbox" id="skill-10" name="skill" onclick="stamina(10)">
+      
+        </form>
+
+        <script>
+        var i = 0
+        function stamina(i){
+          var x = 1
+          while(x < i){
+                document.getElementById("skill-" + x).checked = true;
+                x++;
+            }
+            x++
+          while(x < 11){
+               document.getElementById("skill-" + x).checked = false;
+               x++;
+          }
+        }
+
+      </script>
+
+    </div>
+    <!-- divisão -->
+
+    <div class="grid-item">
+      <label for="blanc-space"></label>
+      <input type="text" id="skillextra" name="skillextra">
+
+      <form action="/action_page.php">
+        <label for="skillextra"></label>
+         <input type="checkbox" id="skille-1" name="skill" checked>
+         <input type="checkbox" id="skille-2" name="skill"onclick="skillextra(2)">
+        <input type="checkbox" id="skille-3" name="skill"onclick="skillextra(3)">
+        <input type="checkbox" id="skille-4" name="skill"onclick="skillextra(4)">
+         <input type="checkbox" id="skille-5" name="skill"onclick="skillextra(5)">
+        <input type="checkbox" id="skille-6" name="skill"onclick="skillextra(6)">
+        <input type="checkbox" id="skille-7" name="skill"onclick="skillextra(7)">
+        <input type="checkbox" id="skille-8" name="skill"onclick="skillextra(8)">
+         <input type="checkbox" id="skille-9" name="skill"onclick="skillextra(9)">
+        <input type="checkbox" id="skille-10" name="skill" onclick="skillextra(10)">
+     
+       </form>
+
+       <script>
+       var i = 0
+       function skillextra(i){
+         var x = 1
+         while(x < i){
+               document.getElementById("skille-" + x).checked = true;
+               x++;
+           }
+           x++
+          while(x < 11){
+               document.getElementById("skille-" + x).checked = false;
+               x++;
+          }
+       }
+
+     </script>
+
+    </div>
+
+    <div class="grid-item">
+      <label for="blanc-space"></label>
+      <input type="eskill" id="titles" name="eskill">
+
+      <form action="/action_page.php">
+        <label for="eskill"></label>
+         <input type="checkbox" id="eskill-1" name="skill" checked>
+         <input type="checkbox" id="eskill-2" name="skill"onclick="eskill(2)">
+        <input type="checkbox" id="eskill-3" name="skill"onclick="eskill(3)">
+        <input type="checkbox" id="eskill-4" name="skill"onclick="eskill(4)">
+         <input type="checkbox" id="eskill-5" name="skill"onclick="eskill(5)">
+        <input type="checkbox" id="eskill-6" name="skill"onclick="eskill(6)">
+        <input type="checkbox" id="eskill-7" name="skill"onclick="eskill(7)">
+        <input type="checkbox" id="eskill-8" name="skill"onclick="eskill(8)">
+         <input type="checkbox" id="eskill-9" name="skill"onclick="eskill(9)">
+        <input type="checkbox" id="eskill-10" name="skill" onclick="eskill(10)">
+     
+       </form>
+
+       <script>
+       var i = 0
+       function eskill(i){
+         var x = 1
+         while(x < i){
+               document.getElementById("eskill-" + x).checked = true;
+               x++;
+           }
+           x++
+          while(x < 11){
+               document.getElementById("eskill-" + x).checked = false;
+               x++;
+          }
+       }
+
+     </script>
+
+
+
+    </form>
+    </div>
+<!--divisão-->
+    
+
+
+</body>
+</html>
